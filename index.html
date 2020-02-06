@@ -1,0 +1,11 @@
+<script src="morphgnt-parse.js"></script>
+<script>
+    function parse() {
+        document.getElementById('result').innerHTML = parseGreekMorph( document.getElementById('morph').value );
+        return false;
+    }
+</script>
+<form onsubmit="return parse();">
+    <input placeholder="Enter a morphology" id="morph" />
+</form>
+<div id="result"></div>
